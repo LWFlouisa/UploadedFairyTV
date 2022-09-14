@@ -98,21 +98,45 @@
 
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <center><iframe width="75%" height="75%" src="https://www.youtube.com/embed/9uTi1UTDaNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+    <div class="numbertext">1 / 6</div>
+    <center><iframe title="Uploaded Fairy Hemato's Story Prologue" src="https://video.ploud.jp/videos/embed/de6b6e1a-226a-4ac3-a8fc-61f2a5e8c9d4" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="100%" height="100%" frameborder="0"></iframe></center>
     <div class="text">Chapter 1</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <center><iframe width="75%" height="75%" src="https://www.youtube.com/embed/X4gCf98qe9A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+    <div class="numbertext">2 / 6</div>
+    <center><iframe title="Uploaded Fairy" src="https://video.ploud.jp/video-playlists/embed/6f1c657d-c47c-45fc-b6cd-6806e2e92a75?playlistPosition=2" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="100%" height="100%" frameborder="0"></iframe></center>
     <div class="text">Chapter 2</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <center><iframe width="75%" height="75%" src="https://www.youtube.com/embed/iJ96pzCqsIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
-    <div class="text">Chapter 2</div>
+    <div class="numbertext">3 / 6</div>
+    <center><iframe title="Uploaded Fairy" src="https://video.ploud.jp/video-playlists/embed/6f1c657d-c47c-45fc-b6cd-6806e2e92a75?playlistPosition=3" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="100%" height="100%" frameborder="0"></iframe></center>
+    <div class="text">Chapter 3</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <center><iframe title="Uploaded Fairy" src="https://video.ploud.jp/video-playlists/embed/6f1c657d-c47c-45fc-b6cd-6806e2e92a75?playlistPosition=4" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="100%" height="100%" frameborder="0"></iframe></center>
+    <div class="text">Chapter 4</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <center><iframe title="Uploaded Fairy" src="https://video.ploud.jp/video-playlists/embed/6f1c657d-c47c-45fc-b6cd-6806e2e92a75?playlistPosition=5" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="100%" height="100%" frameborder="0"></iframe></center>
+    <div class="text">Chapter 5</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <center><iframe title="Uploaded Fairy" src="https://video.ploud.jp/video-playlists/embed/6f1c657d-c47c-45fc-b6cd-6806e2e92a75?playlistPosition=6" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="100%" height="100%" frameborder="0"></iframe></center>
+    <div class="text">Chapter 5</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <center><iframe title="Uploaded Fairy" src="https://video.ploud.jp/video-playlists/embed/6f1c657d-c47c-45fc-b6cd-6806e2e92a75?playlistPosition=7" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="100%" height="100%" frameborder="0"></iframe></center>
+    <div class="text">Chapter 6</div>
   </div>
 
   <!-- Next and previous buttons -->
@@ -126,120 +150,6 @@
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
 </div> 
-
-<script>
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-</style>
-
- <!-- Container for the image gallery -->
-<div class="container">
-
-  <!-- Full-width images with number text -->
-  <div class="mySlides">
-    <div class="numbertext">1 / 1</div>
-      <center><iframe width="75%" height="75%" src="https://www.youtube.com/embed/inQBmcfsphg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">1 / 1</div>
-      <center><iframe width="75%" height="75%" src="https://www.youtube.com/embed/wbDGumBLFNA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-  <!-- Image text -->
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
-
-  <!-- Thumbnail images -->
-  <div class="row">
-    <div class="column">
-      <img src="https;//lwflouisa.github.io/SRWeaverTube/thumbnails/activist_girl.png" width="320px" height="240px">
-    </div>
-    <div class="column">
-      <img src="https://lwflouisa.github.io/SRWeaverTube/thumbnails/off_black_3.png" width="320px" height="240px">
-    </div>
-  </div>
-</div>
 
 <script>
 let slideIndex = 1;
