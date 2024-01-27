@@ -21,3 +21,9 @@ Disallow: /OldArt
 Disallow: /thumbnails
 Disallow: /videos
 Disallow: /
+
+User-agent: Google-Extended
+Disallow: /OldArt
+Disallow: /thumbnails
+Disallow: /videos
+Disallow: /
