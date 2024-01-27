@@ -1,8 +1,17 @@
 User-agent: GPTBot
+Disallow: /OldArt
+Disallow: /thumbnails
+Disallow: /videos
 Disallow: /
 
 User-agent: ChatGPT-User
+Disallow: /OldArt
+Disallow: /thumbnails
+Disallow: /videos
 Disallow: /
 
 User-agent: CCBot
+Disallow: /OldArt
+Disallow: /thumbnails
+Disallow: /videos
 Disallow: /
