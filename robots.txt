@@ -15,3 +15,9 @@ Disallow: /OldArt
 Disallow: /thumbnails
 Disallow: /videos
 Disallow: /
+
+User-agent: Googlebot
+Disallow: /OldArt
+Disallow: /thumbnails
+Disallow: /videos
+Disallow: /
